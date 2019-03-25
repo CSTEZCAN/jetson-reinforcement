@@ -32,7 +32,7 @@ sudo apt-get install libglew-dev glew-utils libgstreamer1.0-dev libgstreamer-plu
 while true; do
     read -p "[Pre-build]  Do you wish to install Gazebo robotics simulator (y/N)? " yn
     case $yn in
-        [Yy]* ) sudo apt-get install -y gazebo7 libgazebo7-dev; break;;
+        [Yy]* ) sudo apt-get install -y gazebo9 libgazebo9-dev; break;;
         [Nn]* ) echo "[Pre-build]  skipping Gazebo installation"; break;;
         * ) echo "[Pre-build]  Please answer yes or no.";;
     esac
